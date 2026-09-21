@@ -28,15 +28,17 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
+        working-directory: ./B14-A05-DevStack-main/devstack
         run: npm install
 
       - name: Build
+        working-directory: ./B14-A05-DevStack-main/devstack
         run: npm run build
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: ./B14-A05-DevStack-main/devstack/dist
 
   deploy:
     needs: build
