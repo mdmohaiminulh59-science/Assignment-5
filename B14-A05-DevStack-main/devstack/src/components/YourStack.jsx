@@ -22,7 +22,7 @@ export default function YourStack({ stack, onRemove, onRemoveAll }) {
           <p className="text-sm text-gray-400 font-medium">Your stack is empty.</p>
         </div>
       ) : (
-        <div className="space-y-2.5 max-h-[420px] overflow-y-auto pr-1">
+        <div className="space-y-2.5 max-h-105 overflow-y-auto pr-1">
           {stack.map((tech) => (
             <div
               key={tech.id}
@@ -30,7 +30,7 @@ export default function YourStack({ stack, onRemove, onRemoveAll }) {
               className="flex items-center gap-3 bg-gray-50 rounded-xl p-3 border border-gray-100 hover:border-gray-200 transition-colors"
             >
               {/* Icon */}
-              <div className="w-9 h-9 rounded-lg bg-white flex items-center justify-center p-1.5 border border-gray-100 flex-shrink-0">
+              <div className="w-9 h-9 rounded-lg bg-white flex items-center justify-center p-1.5 border border-gray-100 shrink-0">
                 <img
                   src={tech.icon}
                   alt={tech.name}
@@ -52,7 +52,7 @@ export default function YourStack({ stack, onRemove, onRemoveAll }) {
               <button
                 id={`remove-btn-${tech.id}`}
                 onClick={() => onRemove(tech.id)}
-                className="text-gray-400 hover:text-gray-700 transition-colors p-1 rounded-lg hover:bg-gray-200 flex-shrink-0"
+                className="text-gray-400 hover:text-gray-700 transition-colors p-1 rounded-lg hover:bg-gray-200 shrink-0"
                 aria-label={`Remove ${tech.name}`}
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

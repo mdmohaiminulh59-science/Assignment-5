@@ -36,7 +36,7 @@ export default function Hero() {
           {/* Right: Banner Image */}
           <div className="flex-1 flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-orange-100 via-pink-100 to-violet-100 blur-3xl opacity-60 scale-110" />
+              <div className="absolute inset-0 rounded-3xl bg-linear-to-br from-orange-100 via-pink-100 to-violet-100 blur-3xl opacity-60 scale-110" />
               <img
                 src={bannerImg}
                 alt="Dev Stack Builder 3D illustration"

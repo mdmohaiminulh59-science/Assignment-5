@@ -12,7 +12,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
 
           {/* Left: Logo + Brand */}
-          <div className="flex items-center gap-2.5 flex-shrink-0">
+          <div className="flex items-center gap-2.5 shrink-0">
             {/* DS Logo icon */}
             <div className="w-9 h-9 rounded-lg brand-gradient-bg flex items-center justify-center shadow-md">
               <span className="text-white font-bold text-sm tracking-tight">DS</span>
